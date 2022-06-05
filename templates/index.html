@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OYOUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@300;400&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"  href= "{{ url_for('static',filename='start/css/normalize.css')}}" />
+    <link rel="stylesheet"  href= "{{ url_for('static',filename='start/css/landing.css')}}" />
+    <link rel="stylesheet"  href= "{{ url_for('static',filename='start/css/all.min.css')}}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css_table/style.css')}}"
+    />
+
+</head>
+
+<body>
+    
+
+    <div class="header" id="header">
+        <div class="container">
+            <a class="logo" href=""><i class="fa fa-eye ey"></i>YOUN</a>
+            <i class="fas fa-bars menu"></i>
+            <ul class="main-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <div class="active"><a href="http://127.0.0.1:5000/sign in">Sign in</a></div>
+                <div class="active"><a href="http://127.0.0.1:5000/sign up">Sign Up</a></div>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Start of landing -->
+
+    <div class="landing">
+        <div class="container">
+            <div class="text">
+                <h1>Welcome to Oyoun Hospital</h1>
+                <p>Our mission is to provide treatment according to the international standards in field of
+                    ophthalmology in Egypt </p>
+                <div class="but"><a href="http://127.0.0.1:5000/sign in" class="btn1">Sign in</a></div>
+            </div>
+            <div class="image">
+                <img src="{{url_for('static',filename = 'start/images/96058970-hombre-dentista-y-oftalmólogo-hombre-en-uniforme-de-hospital-en-el-cuadro-de-prueba-de-ojo-tratamien.webp')}}"
+                    alt="landing photo">
+            </div>
+        </div>
+    </div>
+    <!-- End of landing -->
+
+
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="main-heading">
+                <h2>About Us</h2>
+                <p> Oyoun Hospital provides Comprehensive Ophthalmology services. </p>
+            </div>
+            <div class="about-container">
+                <div class="image">
+                    <img src="{{url_for('static',filename = 'start/images/about.png')}}" alt="about photo">
+                </div>
+                <div class="text">
+                    <h2>Leading eye providers</h1>
+                        <p>We have a highly qualified team of medical and administrative staff that offers a wide range
+                            of ophthalmology services, which is guaranteed to meet your needs.</p>
+                        <p>Employees join our team with different skill sets, which gives us an opportunity to tailor
+                            training to meet individual needs.</p>
+                        <p>Our vision is to combine outstanding care with an affordable cost.</p>
+                        <p>Provide compassionate and quality eye care affordable to all.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="box">
+                <div class="main-heading">
+                    <h2>Contact Us</h2>
+                    <p>We are happy to receive your inquiries and suggestions</p>
+                </div>
+                <form action="/" method= "POST">
+                    <input type="text" placeholder="Your User-Name" name="p_username">
+                    <input type="email" placeholder="Your Email" name="p_email">
+                    <input type="text" placeholder="Your Phone" name="p_phone">
+                    <textarea class="input" placeholder="Tell Us About Your Needs" name="message"></textarea>
+                    <input type="submit" class="active2" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3><i class="fa fa-eye ey"></i>YOUN</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">quality eye care affordable to all</p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">Egypt-Giza</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: 24 hours</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>01554498684</span>
+                        <span>01554959040</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <script src="js/landing.js"></script>
+</body>
+
+</html>

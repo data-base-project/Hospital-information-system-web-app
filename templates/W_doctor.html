@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Page</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='welcome doctor page/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='welcome doctor page/css/all.min.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css_table/style.css')}}"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="bubbles">
+            <span style=" --i:11"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:3"></span>
+            <span style=" --i:21"></span>
+            <span style=" --i:51"></span>
+            <span style=" --i:70"></span>
+            <span style=" --i:16"></span>
+            <span style=" --i:25"></span>
+            <span style=" --i:13"></span>
+            <span style=" --i:20"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:5"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:6"></span>
+            <span style=" --i:14"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:17"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:15"></span>
+            <span style=" --i:80"></span>
+            <span style=" --i:7"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:18"></span>
+            <span style=" --i:28"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:3"></span>
+            <span style=" --i:21"></span>
+            <span style=" --i:27"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:16"></span>
+            <span style=" --i:25"></span>
+            <span style=" --i:13"></span>
+            <span style=" --i:20"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:5"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:6"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:17"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:15"></span>
+            <span style=" --i:18"></span>
+            <span style=" --i:5"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:3"></span>
+            <span style=" --i:21"></span>
+            <span style=" --i:18"></span>
+            <span style=" --i:16"></span>
+            <span style=" --i:16"></span>
+            <span style=" --i:25"></span>
+            <span style=" --i:13"></span>
+            <span style=" --i:20"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:5"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:6"></span>
+            <span style=" --i:14"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:17"></span>
+            <span style=" --i:90"></span>
+            <span style=" --i:15"></span>
+            <span style=" --i:20"></span>
+            <span style=" --i:7"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:1"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:28"></span>
+            <span style=" --i:10"></span>
+            <span style=" --i:3"></span>
+            <span style=" --i:20"></span>
+            <span style=" --i:27"></span>
+            <span style=" --i:11"></span>
+            <span style=" --i:16"></span>
+            <span style=" --i:25"></span>
+            <span style=" --i:13"></span>
+            <span style=" --i:20"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:5"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:27"></span>
+            <span style=" --i:6"></span>
+            <span style=" --i:13"></span>
+            <span style=" --i:19"></span>
+            <span style=" --i:17"></span>
+            <span style=" --i:3"></span>
+            <span style=" --i:15"></span>
+            <span style=" --i:18"></span>
+            <span style=" --i:5"></span>
+            <span style=" --i:9"></span>
+            <span style=" --i:1"></span>
+            <span style=" --i:18"></span>
+        </div>
+        <div class="features" id="features">
+            <div class="header" id="header">
+                <div class="container">
+                    <a class="logo" href="W_doctor">
+                        <img class="image-logo" src="{{url_for('static',filename = 'welcome doctor page/images/eyes.png')}}"
+                            alt="logo photo">
+                        YOUN</a>
+                    <i class="fas fa-bars menu"></i>
+                    <nav class="main-nav">
+                        <a href="upload">Scan</a>
+                        <a href="doctorappoin">Appointmnts</a>
+                        <a href="my patients">My Patient</a>
+                        <a href="examination">Examination</a>
+                        <a href="/">Log out</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="contain">
+                <div class="box quality">
+                    <div class="img-holder">
+                        <img src="{{url_for('static',filename = 'welcome doctor page/images/R (1).jpeg')}}" alt=""/>
+                    </div>
+                    <h2> My Patient</h2>
+                    <p>We're trying to help you.</p>
+                    <a href="my patients">Patients</a>
+                </div>
+                <div class="box time">
+                    <div class="img-holder">
+                        <img src="{{url_for('static',filename = 'welcome doctor page/images/R_edited.jpg')}}" alt=""/>
+                    </div>
+                    <h2>View Appointment</h2>
+                    <p>watch your appointment to help you</p>
+                    <a href="doctorappoin">Appointment</a>
+                </div>
+                <div class="box passion">
+                    <div class="img-holder">
+                        <img src="{{url_for('static',filename = 'welcome doctor page/images/R (2)_edited.jpg')}}" alt=""/>
+                    </div>
+                    <h2>Write Examination</h2>
+                    <p>watch your prescription may be avaible</p>
+                    <a href="examination">Examination</a>
+                </div>
+                <div class="box scans">
+                    <div class="img-holder">
+                        <img src="{{url_for('static',filename = 'welcome doctor page/images/R (2)_edited.jpg')}}" alt=""/>
+                    </div>
+                    <h2>Upload Scan</h2>
+                    <p>watch your prescription may be avaible</p>
+                    <a href="upload">upload scan</a>
+                </div>
+                <div class="box uplaod">
+                    <div class="img-holder">
+                        <img src="{{url_for('static',filename = 'welcome doctor page/images/R (2)_edited.jpg')}}" alt=""/>
+                    </div>
+                    <h2>View Scans</h2>
+                    <p>watch your prescription may be avaible</p>
+                    <a href="view scan">View scan</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/landing.js"></script>
+    </div>
+    
+</body>
+</html>

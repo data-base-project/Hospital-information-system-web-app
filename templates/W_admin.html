@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='welcome admin page/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='welcome admin page/css/all.min.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css_table/style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bubbles">
+        <span style="--i: 11"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 51"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 80"></span>
+        <span style="--i: 7"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 7"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 1"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 1"></span>
+        <span style="--i: 18"></span>
+      </div>
+      <div class="features" id="features">
+        <div class="header" id="header">
+          <div class="container">
+            <a class="logo" href="W_admin">
+              <img
+                class="image-logo"
+                src="{{url_for('static',filename = 'welcome admin page/images/eyes.png')}}"
+                alt="logo photo"
+              />YOUN</a
+            >
+          <nav class="main-nav">
+            <i class="fas fa-bars menu"></i>
+            <a href="a_viewdoctor">Doctors</a>
+            <a href="a_viewappoin">Appointments</a>
+            <a href="a_viewprescription">Prescription</a>
+            <a href="a_viewpatient">Patients</a>
+            <a href="adddoctor">Add Doctor</a>
+            <a href="contactform">View Forms</a>
+            <a href="/">Log out</a>
+          </nav>
+        </div>
+        </div>
+      <div class="contain">
+        <!-- View Doctors -->
+        <div class="box quality">
+          <div class="img-holder">
+            <img src="{{url_for('static',filename = 'welcome admin page/images/doctor_1.png')}}" alt="" />
+          </div>
+          <h2>Doctors</h2>
+          <p></p>
+          <a href="a_viewdoctor">View Doctors</a>
+        </div>
+        <!-- View Appointments -->
+        <div class="box time">
+          <div class="img-holder">
+            <img src="{{url_for('static',filename = 'welcome admin page/images/R_edited.jpg')}}" alt="" />
+          </div>
+          <h2>Appointments</h2>
+          <p></p>
+          <a href="a_viewappoin">View Appointments</a>
+        </div>
+        <!-- View Prescriptions -->
+        <div class="box passion">
+          <div class="img-holder">
+            <img src="{{url_for('static',filename = 'welcome admin page/images/medicine.jpg')}}" alt="" />
+          </div>
+          <h2>Prescriptions</h2>
+          <p></p>
+          <a href="a_viewprescription">View Prescriptions</a>
+        </div>
+        <!-- View Patients -->
+        <div class="box quality">
+          <div class="img-holder">
+            <img src="{{url_for('static',filename = 'welcome admin page/images/pateintpng.png')}}" alt="" />
+          </div>
+          <h2>Patients</h2>
+          <p></p>
+          <a href="a_viewpatient">View Patients</a>
+        </div>
+        <!-- Add Doctor -->
+        <div class="box time">
+          <div class="img-holder">
+            <img src="{{url_for('static',filename = 'welcome admin page/images/doctor-add.jpg')}}" alt="" />
+          </div>
+          <h2>Add Doctor</h2>
+          <p></p>
+          <a href="adddoctor">Add Doctor</a>
+        </div>
+        <!-- Contact Us Forms -->
+        <div class="box passion">
+          <div class="img-holder">
+            <img src="{{url_for('static',filename = 'welcome admin page/images/contact.jpg')}}" alt="" />
+          </div>
+          <h2>Contact Us Forms</h2>
+          <p></p>
+          <a href="contactform">View Forms</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

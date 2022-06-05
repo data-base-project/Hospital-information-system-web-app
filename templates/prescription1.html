@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Appointment</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename ='prescription1/css/style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css_table/style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bubbles">
+        <span style="--i: 11"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 51"></span>
+        <span style="--i: 70"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 80"></span>
+        <span style="--i: 7"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 21"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 14"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 90"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 7"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 1"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 28"></span>
+        <span style="--i: 10"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 11"></span>
+        <span style="--i: 16"></span>
+        <span style="--i: 25"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 20"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 27"></span>
+        <span style="--i: 6"></span>
+        <span style="--i: 13"></span>
+        <span style="--i: 19"></span>
+        <span style="--i: 17"></span>
+        <span style="--i: 3"></span>
+        <span style="--i: 15"></span>
+        <span style="--i: 18"></span>
+        <span style="--i: 5"></span>
+        <span style="--i: 9"></span>
+        <span style="--i: 1"></span>
+        <span style="--i: 18"></span>
+      </div>
+      <div class="contain">
+        <div class="title">Prescriptions</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Examination ID</th>
+              <th scope="col">Doctor ID</th>
+              <th scope="col">Doctor Name</th>
+              <th scope="col">Examination Date</th>
+              <th scope="col">Doctor Diagnosis</th>
+              <th scope="col">Doctor Prescription</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in data%}
+            <tr>
+              <td>{{r.8}}</td>
+              <td>{{r.1}}</td>
+              <td>{{r.3}}</td>
+              <td>{{r.5}}</td>
+              <td>{{r.6}}</td>
+              <td>{{r.7}}</td>
+            </tr>
+            {% endfor%}
+          </tbody>
+        </table>
+        <form action="prescription1" method="POST" autocomplete="off">
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"> Prescription ID </span>
+              <input
+                type="text"
+                placeholder="Enter your phone number"
+                name="examination_id"
+                required
+              />
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Delete" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

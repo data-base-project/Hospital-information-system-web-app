@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADD DOCTOR</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'adddoctor/css/style.css')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename = 'adddoctor/css/all.min.css')}}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="containbubbles">
+        <div class="bubbles">
+          <span style="--i: 11"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 51"></span>
+          <span style="--i: 70"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 80"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 28"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 27"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 21"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 14"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 90"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 7"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 1"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 28"></span>
+          <span style="--i: 10"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 27"></span>
+          <span style="--i: 11"></span>
+          <span style="--i: 16"></span>
+          <span style="--i: 25"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 20"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 27"></span>
+          <span style="--i: 6"></span>
+          <span style="--i: 13"></span>
+          <span style="--i: 19"></span>
+          <span style="--i: 17"></span>
+          <span style="--i: 3"></span>
+          <span style="--i: 15"></span>
+          <span style="--i: 18"></span>
+          <span style="--i: 5"></span>
+          <span style="--i: 9"></span>
+          <span style="--i: 1"></span>
+          <span style="--i: 18"></span>
+        </div>
+      </div>
+      <div class="header" id="header">
+        <div class="container">
+          <a class="logo" href="W_admin">
+            <img
+              class="image-logo"
+              src="{{url_for('static',filename = 'adddoctor/images/eyes.png')}}"
+              alt="logo photo"
+            />
+            YOUN</a
+          >
+          <i class="fas fa-bars menu"></i>
+          <nav class="main-nav">
+            <a href="a_viewdoctor">Doctors</a>
+            <a href="a_viewappoin">Appointments</a>
+            <a href="a_viewprescription">Prescription</a>
+            <a href="a_viewpatient">Patients</a>
+            <a href="contactform">ViewForms</a>
+            <a href="/">Logout</a>
+          </nav>
+        </div>
+      </div>
+      <div class="containlog">
+        <div class="title">Registration</div>
+        <form action="adddoctor" method="POST" autocomplete="off">
+          <div class="msg">{{ msg }}</div>
+          <div class="user-details">
+            <div class="input-box">
+              <span class="details"> First Name </span>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="f_name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Middle Name </span>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="m_name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Last Name </span>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="l_name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Username </span>
+              <input
+                type="text"
+                placeholder="Enter your username"
+                name="username"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Email </span>
+              <input
+                type="email"
+                placeholder="oyoun@example"
+                name="email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Phone Number </span>
+              <input
+                type="number"
+                placeholder="Enter your phone number"
+                name="phone"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Age </span>
+              <input
+                type="text"
+                placeholder="Enter your Age"
+                name="age"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Password </span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="p_word"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Repeat password </span>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                name="psw-repeat"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <span class="details"> Birth Date </span>
+              <input type="date" placeholder="" name="date" required />
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Register" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/landing.js"></script>
+  </body>
+</html>

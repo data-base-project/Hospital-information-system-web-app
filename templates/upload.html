@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='upload/css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='upload/css/all.min.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css_table/style.css')}}"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="containbubbles">
+            <div class="bubbles">
+                <span style=" --i:11"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:3"></span>
+                <span style=" --i:21"></span>
+                <span style=" --i:51"></span>
+                <span style=" --i:70"></span>
+                <span style=" --i:16"></span>
+                <span style=" --i:25"></span>
+                <span style=" --i:13"></span>
+                <span style=" --i:20"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:5"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:6"></span>
+                <span style=" --i:14"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:17"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:15"></span>
+                <span style=" --i:80"></span>
+                <span style=" --i:7"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:18"></span>
+                <span style=" --i:28"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:3"></span>
+                <span style=" --i:21"></span>
+                <span style=" --i:27"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:16"></span>
+                <span style=" --i:25"></span>
+                <span style=" --i:13"></span>
+                <span style=" --i:20"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:5"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:6"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:17"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:15"></span>
+                <span style=" --i:18"></span>
+                <span style=" --i:5"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:3"></span>
+                <span style=" --i:21"></span>
+                <span style=" --i:18"></span>
+                <span style=" --i:16"></span>
+                <span style=" --i:16"></span>
+                <span style=" --i:25"></span>
+                <span style=" --i:13"></span>
+                <span style=" --i:20"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:5"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:6"></span>
+                <span style=" --i:14"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:17"></span>
+                <span style=" --i:90"></span>
+                <span style=" --i:15"></span>
+                <span style=" --i:20"></span>
+                <span style=" --i:7"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:1"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:28"></span>
+                <span style=" --i:10"></span>
+                <span style=" --i:3"></span>
+                <span style=" --i:20"></span>
+                <span style=" --i:27"></span>
+                <span style=" --i:11"></span>
+                <span style=" --i:16"></span>
+                <span style=" --i:25"></span>
+                <span style=" --i:13"></span>
+                <span style=" --i:20"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:5"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:27"></span>
+                <span style=" --i:6"></span>
+                <span style=" --i:13"></span>
+                <span style=" --i:19"></span>
+                <span style=" --i:17"></span>
+                <span style=" --i:3"></span>
+                <span style=" --i:15"></span>
+                <span style=" --i:18"></span>
+                <span style=" --i:5"></span>
+                <span style=" --i:9"></span>
+                <span style=" --i:1"></span>
+                <span style=" --i:18"></span>
+            </div>
+        </div>
+        <div class="header" id="header">
+            <div class="container">
+                <a class="logo" href="">
+                    <img class="image-logo" src="{{url_for('static',filename = 'upload/images/eyes.png')}}"
+                        alt="logo photo">
+                    YOUN</a>
+                <i class="fas fa-bars menu"></i>
+                <nav class="main-nav">
+                    <a href="doctorappoin">Appointmnts</a>
+                    <a href="my patients">My Patient</a>
+                    <a href="examination">Examination</a>
+                    <a href="/">Log out</a>
+                </nav>
+            </div>
+        </div>
+        <div class="containlog">
+            <div class="title">
+                Upload Form
+            </div>
+            <form action="upload" method= "POST" enctype="multipart/form-data" autocomplete="off">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">
+                            Select your Patient
+                        </span>
+                        <input list="Doctor name" placeholder="Select your Patient" name="uploadedfile" required>
+                        <datalist id="Doctor name">
+                            {% for item in data %}
+                            <option value={{item[0]+'-'+item[1]}}>
+                            {% endfor %}
+                        </datalist>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">
+                            Patient ID
+                        </span>
+                        <input type="text" placeholder="Enter Patient ID"  name="patient_id"required>
+                        
+                    </div>
+                    <div class="input-box date">
+                        <span class="details">
+                            Date
+                        </span>
+                        <input type="date" placeholder="" required>
+                    </div>
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="detailsfile ">
+                            Upload Scan
+                            </span>
+                            <input type="file" placeholder="" name="photo"required>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+                </div>
+                
+            </form>
+        </div>
+        
+    </div>
+    <script src="js/landing.js"></script>
+
+</body>
+</html>
